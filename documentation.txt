@@ -1,0 +1,7 @@
+Woodokan Theme
+--------------
+Author 		: Chafik Amraoui
+Website		: www.woodokan.com
+Date Start 	: 16/05/2022
+Github		: github.io/chafikamr
+Email Adress    : chafikamraoui0@gmail.com
