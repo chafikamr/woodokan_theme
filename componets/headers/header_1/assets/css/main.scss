@@ -116,6 +116,14 @@ header.header-1 {
     }
     .menu-mobile {
         display: block;
+        &.sticky-bar {
+            position: fixed;
+            top: 0;
+            animation: slide-down .7s;
+            width: 100%;
+            right: 0;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.247);
+        }
         @media (min-width: 1124px) {
             display: none;
         }
@@ -168,7 +176,7 @@ header.header-1 {
         }
     }
     .left-sidebar {
-        position: absolute;
+        position: fixed;
         background-color: white;
         left: 0;
         top: 0;

@@ -47,3 +47,11 @@ let w_out_sticky = document.querySelector(".w-out") // terget class or id
 window.addEventListener('scroll', () => {
     window.scrollY > 200 ? w_out_sticky.classList.add("sticky-bar") : w_out_sticky.classList.remove("sticky-bar")
 })
+
+
+// sticky Header js plugin
+let w_out_mobile_sticky = document.querySelector(".w-mobile-out") // terget class or id
+    // hear is  scroll logic
+window.addEventListener('scroll', () => {
+    window.scrollY > 200 ? w_out_mobile_sticky.classList.add("sticky-bar") : w_out_mobile_sticky.classList.remove("sticky-bar")
+})
