@@ -15,6 +15,8 @@
 </head>
 
 <body>
+
+    <div class="" id="overlay"></div>
     <header class="header-1">
         <div class="store-notice">
             <p>Free Shipping - Big Sale 100% off</p>
@@ -70,27 +72,30 @@
                         </a>
                     </div>
                     <div class="burger-button">
-                        <i class="fas fa-align-right"></i>
+                        <i class="fas fa-align-right" id="open_side_menu"></i>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="left-sidebar">
+        <div class="left-sidebar off">
+            <div class="close-icon">
+                <button id="close_mobile_sidebar"><i class="fa-solid fa-xmark"></i></button>
+            </div>
             <header>
                 <a href="#">
                     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQj0Eop-dQhhNaqUs_27naFgF54AHm60fzlEanx8icmxXSmU8Eo0NCsoTg6Xp3gATb6rYk&usqp=CAU" alt="">
                 </a>
             </header>
             <nav>
+                <form action="" method="post">
+                    <input type="search" name="" id="" placeholder="search for a product">
+                </form>
                 <ul>
-                    <li>
-                        <input type="search" name="" id="">
-                    </li>
-                    <li>Home</li>
-                    <li>About</li>
-                    <li>Services</li>
-                    <li>Products</li>
-                    <li>Shop</li>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Categories</a></li>
+                    <li><a href="#">Shop</a></li>
                 </ul>
             </nav>
         </div>
@@ -103,6 +108,9 @@
             </div>
         </div>
     </section>
+
+
+    <script src="assets/js/main.js"></script>
 </body>
 
 </html>
