@@ -38,3 +38,12 @@ open_side_menu_btn.addEventListener('click', function() {
         overlay.classList.remove('overlay-on')
     }
 })
+
+
+
+// sticky Header js plugin
+let w_out_sticky = document.querySelector(".w-out") // terget class or id
+    // hear is  scroll logic
+window.addEventListener('scroll', () => {
+    window.scrollY > 200 ? w_out_sticky.classList.add("sticky-bar") : w_out_sticky.classList.remove("sticky-bar")
+})

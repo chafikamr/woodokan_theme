@@ -39,11 +39,17 @@ header.header-1 {
         width: 100%;
         background-color: white;
         top: 0px;
-        position: sticky;
+        // position: sticky;
         display: none;
         top: 0;
+        transition: top .5s ease-in-out;
         @media (min-width: 1124px) {
             display: block;
+        }
+        &.sticky-bar {
+            position: fixed;
+            top: 0;
+            animation: slide-down .7s;
         }
         .main-navigation {
             display: flex;
@@ -266,5 +272,14 @@ section.hero {
             // border-radius: 10px;
             // box-shadow: 1px 1px 4px 1px #0000003b;
         }
+    }
+}
+
+@keyframes slide-down {
+    0% {
+        transform: translateY(-100%);
+    }
+    100% {
+        transform: translateY(0);
     }
 }

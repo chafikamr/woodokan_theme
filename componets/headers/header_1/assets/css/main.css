@@ -44,16 +44,23 @@ header.header-1 .menu-desktop {
   width: 100%;
   background-color: white;
   top: 0px;
-  position: -webkit-sticky;
-  position: sticky;
   display: none;
   top: 0;
+  -webkit-transition: top .5s ease-in-out;
+  transition: top .5s ease-in-out;
 }
 
 @media (min-width: 1124px) {
   header.header-1 .menu-desktop {
     display: block;
   }
+}
+
+header.header-1 .menu-desktop.sticky-bar {
+  position: fixed;
+  top: 0;
+  -webkit-animation: slide-down .7s;
+          animation: slide-down .7s;
 }
 
 header.header-1 .menu-desktop .main-navigation {
@@ -377,5 +384,27 @@ header.header-1 .off {
 
 section.hero .hero-image-container img {
   width: 100%;
+}
+
+@-webkit-keyframes slide-down {
+  0% {
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes slide-down {
+  0% {
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
 }
 /*# sourceMappingURL=main.css.map */
