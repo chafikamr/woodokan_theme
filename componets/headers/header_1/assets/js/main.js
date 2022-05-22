@@ -41,17 +41,13 @@ open_side_menu_btn.addEventListener('click', function() {
 
 
 
-// sticky Header js plugin
-let w_out_sticky = document.querySelector(".w-out") // terget class or id
-    // hear is  scroll logic
-window.addEventListener('scroll', () => {
-    window.scrollY > 200 ? w_out_sticky.classList.add("sticky-bar") : w_out_sticky.classList.remove("sticky-bar")
-})
+/*
+ ** sticky Header js plugin
+ */
 
-
-// sticky Header js plugin
-let w_out_mobile_sticky = document.querySelector(".w-mobile-out") // terget class or id
-    // hear is  scroll logic
+let w_out_sticky = document.querySelector(".w-out")
+let header_1 = document.querySelector(".header-1")
 window.addEventListener('scroll', () => {
-    window.scrollY > 200 ? w_out_mobile_sticky.classList.add("sticky-bar") : w_out_mobile_sticky.classList.remove("sticky-bar")
+    window.scrollY > 120 ? header_1.classList.add("sticky-bar") : header_1.classList.remove("sticky-bar")
+
 })
