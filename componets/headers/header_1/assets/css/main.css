@@ -484,4 +484,57 @@ section.showcase-1 .slick-arrow.slick-next::before {
           align-items: center;
   font-weight: 900;
 }
+
+/*** start cats 1 **/
+.cats-1 {
+  margin: 50px 0;
+}
+
+.cats-1 header {
+  text-align: center;
+  margin: 40px 0 50px;
+}
+
+.cats-1 .category-card {
+  color: white;
+  position: relative;
+  padding: 50px 10px 10px;
+}
+
+.cats-1 .category-card .category-label {
+  position: absolute;
+  left: 50%;
+  top: 20px;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  z-index: 2;
+  color: black;
+}
+
+.cats-1 .category-card .category-thumbnail {
+  overflow: hidden;
+  padding-bottom: 100%;
+  height: 0;
+  position: relative;
+}
+
+.cats-1 .category-card .category-thumbnail:hover img {
+  -webkit-transform: translate(50%, -50%) scale(1.1);
+          transform: translate(50%, -50%) scale(1.1);
+}
+
+.cats-1 .category-card .category-thumbnail img {
+  right: 50%;
+  -webkit-transform: translate(50%, -50%) scale(1);
+          transform: translate(50%, -50%) scale(1);
+  position: absolute;
+  top: 50%;
+  max-height: 100%;
+  text-indent: -9999px;
+  -webkit-transition: -webkit-transform .25s ease;
+  transition: -webkit-transform .25s ease;
+  transition: transform .25s ease;
+  transition: transform .25s ease, -webkit-transform .25s ease;
+  cursor: pointer;
+}
 /*# sourceMappingURL=main.css.map */
