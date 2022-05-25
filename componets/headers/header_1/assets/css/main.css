@@ -498,43 +498,88 @@ section.showcase-1 .slick-arrow.slick-next::before {
 .cats-1 .category-card {
   color: white;
   position: relative;
-  padding: 50px 10px 10px;
+  margin-bottom: 10px;
+}
+
+.cats-1 .category-card .overlay {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #00000066;
 }
 
 .cats-1 .category-card .category-label {
   position: absolute;
-  left: 50%;
-  top: 20px;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
+  left: 5%;
+  top: 5%;
+  height: 90%;
+  width: 90%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+  border: 1px solid white;
   z-index: 2;
-  color: black;
+  font-size: 18px;
+}
+
+.cats-1 .category-card .category-label span {
+  background-color: rgba(0, 0, 0, 0.26);
+  padding: 10px 20px;
+  text-transform: uppercase;
 }
 
 .cats-1 .category-card .category-thumbnail {
   overflow: hidden;
-  padding-bottom: 100%;
-  height: 0;
-  position: relative;
-}
-
-.cats-1 .category-card .category-thumbnail:hover img {
-  -webkit-transform: translate(50%, -50%) scale(1.1);
-          transform: translate(50%, -50%) scale(1.1);
+  height: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .cats-1 .category-card .category-thumbnail img {
-  right: 50%;
-  -webkit-transform: translate(50%, -50%) scale(1);
-          transform: translate(50%, -50%) scale(1);
-  position: absolute;
-  top: 50%;
-  max-height: 100%;
-  text-indent: -9999px;
-  -webkit-transition: -webkit-transform .25s ease;
-  transition: -webkit-transform .25s ease;
-  transition: transform .25s ease;
-  transition: transform .25s ease, -webkit-transform .25s ease;
+  width: 100%;
+  cursor: pointer;
+}
+
+/*** start cta 1 **/
+.cta_1 .cta_wrapper {
+  padding: 30px;
+  background-color: black;
+  color: white;
+  text-align: center;
+}
+
+.cta_1 .cta_wrapper h4 {
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: 1.2;
+}
+
+.cta_1 .cta_wrapper p {
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.cta_1 .cta_wrapper button {
+  background-color: transparent;
+  border: 1px solid white;
+  padding: 10px 20px;
+  color: white;
   cursor: pointer;
 }
 /*# sourceMappingURL=main.css.map */
