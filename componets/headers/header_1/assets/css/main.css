@@ -748,8 +748,13 @@ start product grid   **/
 }
 
 .footer_1 .footer-block .section {
-  width: 25%;
   overflow: hidden;
+}
+
+@media (max-width: 425px) {
+  .footer_1 .footer-block .section {
+    text-align: center;
+  }
 }
 
 .footer_1 .footer-block .section ul {

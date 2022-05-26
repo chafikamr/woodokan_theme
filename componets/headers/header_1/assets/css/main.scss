@@ -565,8 +565,11 @@ start product grid   **/
         display: flex;
         justify-content: space-between;
         .section {
-            width: 25%;
+            // width: 25%;
             overflow: hidden;
+            @media (max-width: 425px) {
+                text-align: center;
+            }
             ul {
                 list-style: none;
                 padding: 0;
