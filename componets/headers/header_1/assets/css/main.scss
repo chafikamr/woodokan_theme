@@ -11,7 +11,8 @@ body {
     margin: 0;
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
-    min-height: 1000px;
+    min-height: 4000px;
+    position: relative;
 }
 
 header.header-1 {
@@ -413,21 +414,190 @@ section.showcase-1 {
         background-color: black;
         color: white;
         text-align: center;
-        h4 {
-            font-size: 20px;
-            text-transform: uppercase;
-            letter-spacing: 1.2;
-        }
-        p {
-            font-size: 18px;
-            line-height: 1.5;
-        }
-        button {
-            background-color: transparent;
+        .cta_block {
             border: 1px solid white;
-            padding: 10px 20px;
-            color: white;
+            padding: 20px;
+            h4 {
+                font-size: 20px;
+                text-transform: uppercase;
+                letter-spacing: 1.2;
+            }
+            p {
+                font-size: 18px;
+                line-height: 1.5;
+            }
+            button {
+                background-color: transparent;
+                border: 1px solid white;
+                padding: 10px 20px;
+                color: white;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+
+/***
+start product grid   **/
+
+.products_grid_1 {
+    margin-top: 100px;
+    header {
+        text-align: center;
+    }
+    .product-card {
+        margin-top: 30px;
+        overflow: hidden;
+        border: 1px solid rgba(0, 0, 0, 0.174);
+        box-shadow: 0 5px 20px -10px rgba(0, 0, 0, .1);
+        border-radius: 3px;
+        .product-thumbnail {
+            width: 100%;
+            padding: 0 0 100%;
+            display: block;
+            position: relative;
+            height: 0;
+            overflow: hidden;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.247);
+            img {
+                position: absolute;
+                top: 50%;
+                max-height: 100%;
+                text-indent: -9999px;
+                transition: transform .25s ease;
+                right: 50%;
+                transform: translate(50%, -50%) scale(1);
+            }
+        }
+        .product-details {
+            text-align: center;
+            padding: 10px;
+            .product-title {
+                h3 {
+                    font-size: 14px;
+                }
+            }
+            .product-price {
+                display: flex;
+                // justify-content: space-between;
+                flex-direction: column;
+                .regular-price {
+                    font-size: 14px;
+                    text-decoration: line-through;
+                    color: gray;
+                }
+            }
+            .product-rating {
+                font-size: 10px;
+                margin-top: 10px;
+                color: gold;
+            }
+            .product-buy-now {
+                margin-top: 10px;
+                a {
+                    display: block;
+                    text-decoration: none;
+                    color: white;
+                    width: 100%;
+                    background-color: black;
+                    padding: 10px;
+                    border-radius: 3px;
+                }
+            }
+        }
+    }
+}
+
+
+/*** start socila media 1 ***/
+
+.social_media_1 {
+    margin-top: 50px;
+    header {
+        text-align: center;
+    }
+    .wrapper {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        .social-media-link {
             cursor: pointer;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+            // border: 1px solid black;
+            padding: 20px;
+            color: white;
+            background-color: #160545;
+            border-radius: 4px;
+            i {
+                font-size: 30px;
+                margin-bottom: 10px;
+            }
+        }
+    }
+}
+
+
+/*** start baner ads 1 **/
+
+.banner_ads_1 {
+    margin-top: 50px;
+    .banner {
+        img {
+            width: 100%;
+        }
+    }
+}
+
+
+/*** start footer 1 **/
+
+.footer_1 {
+    margin-top: 50px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(254, 254, 254);
+    .footer-block {
+        display: flex;
+        justify-content: space-between;
+        .section {
+            width: 25%;
+            overflow: hidden;
+            ul {
+                list-style: none;
+                padding: 0;
+                li {
+                    margin: 5px 0
+                }
+            }
+            .store_logo {
+                width: 100%;
+                a {
+                    display: block;
+                    width: 50%;
+                    margin: auto;
+                    img {
+                        width: 100%;
+                        height: auto;
+                    }
+                }
+            }
+            .store_description {
+                text-align: center;
+                margin-top: 30px;
+            }
+        }
+    }
+    .copyrights {
+        width: 100%;
+        text-align: center;
+        padding: 30px;
+        i {
+            color: red;
         }
     }
 }
