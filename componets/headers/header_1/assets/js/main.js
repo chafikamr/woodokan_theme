@@ -12,6 +12,7 @@ close_btn.addEventListener("click", function() {
         side_menu.classList.remove('off')
     } else {
         side_menu.classList.add('off')
+        document.body.classList.remove('vh')
         overlay.classList.remove('overlay-on')
     }
 
@@ -29,10 +30,12 @@ open_side_menu_btn.addEventListener('click', function() {
 
     if (side_menu.classList.contains('off')) {
         side_menu.classList.remove('off')
+        document.body.classList.add('vh')
 
         overlay.classList.add('overlay-on')
     } else {
         side_menu.classList.add('off')
+
 
 
         overlay.classList.remove('overlay-on')

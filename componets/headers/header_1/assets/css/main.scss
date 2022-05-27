@@ -11,8 +11,13 @@ body {
     margin: 0;
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
-    min-height: 4000px;
+    // height: 4000px;
     position: relative;
+}
+
+.vh {
+    max-height: 100vh;
+    overflow: hidden;
 }
 
 header.header-1 {
@@ -183,7 +188,7 @@ header.header-1 {
         padding: 20px 15px;
         transition: left .5s ease-in-out;
         box-shadow: 0 5px 20px -10px #0000001a;
-        z-index: 2;
+        z-index: 5;
         @media (max-width: 425px) {
             width: 80%;
         }
@@ -522,8 +527,15 @@ start product grid   **/
         justify-content: center;
         gap: 20px;
         .social-media-link {
+            @media (max-width: 425px) {
+                & {
+                    padding: 10px;
+                    font-size: 12px;
+                }
+            }
             cursor: pointer;
             display: flex;
+            text-decoration: none;
             flex-direction: column;
             justify-content: center;
             text-align: center;
