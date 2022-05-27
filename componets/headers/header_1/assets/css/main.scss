@@ -13,11 +13,23 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     // height: 4000px;
     position: relative;
+    height: auto;
 }
 
 .vh {
     max-height: 100vh;
     overflow: hidden;
+}
+
+.overlay-on {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.425);
+    height: 100%;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 150;
+    transition: background-color .9s ease-in-out;
 }
 
 header.header-1 {
@@ -188,7 +200,7 @@ header.header-1 {
         padding: 20px 15px;
         transition: left .5s ease-in-out;
         box-shadow: 0 5px 20px -10px #0000001a;
-        z-index: 5;
+        z-index: 200;
         @media (max-width: 425px) {
             width: 80%;
         }
@@ -271,16 +283,6 @@ header.header-1 {
     .off {
         left: -100%;
     }
-    .overlay-on {
-        width: 100%;
-        background-color: rgba(0, 0, 0, 0.425);
-        height: 100vh;
-        position: absolute;
-        right: 0;
-        top: 0;
-        z-index: 1;
-        transition: background-color .9s ease-in-out;
-    }
     @keyframes slide-down {
         0% {
             transform: translateY(-100%);
@@ -348,6 +350,7 @@ section.showcase-1 {
         color: white;
         position: relative;
         margin-bottom: 10px;
+        cursor: pointer;
         .overlay {
             position: absolute;
             right: 0;
@@ -414,6 +417,7 @@ section.showcase-1 {
 /*** start cta 1 **/
 
 .cta_1 {
+    margin-top: 50px;
     .cta_wrapper {
         padding: 30px;
         background-color: black;
@@ -613,6 +617,31 @@ start product grid   **/
         padding: 30px;
         i {
             color: red;
+        }
+    }
+}
+
+
+/*** start cats 2    ***/
+
+.cats-2 {
+    header {
+        text-align: center;
+        h2 {}
+    }
+    .category-card {
+        border: 1px solid #00000029;
+        box-shadow: 1px 1px 5px 0px #0000000f;
+        margin-top: 20px;
+        padding: 30px;
+        overflow: hidden;
+        text-align: center;
+        border-radius: 3px;
+        .category-thumbnail {
+            width: 100%;
+            img {
+                width: 100%;
+            }
         }
     }
 }
