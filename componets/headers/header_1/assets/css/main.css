@@ -481,6 +481,64 @@ header.header-1 .off {
 }
 
 /*** Start Show case 1 **/
+/*** Start Show case 1 **/
+section.showcase-1 {
+  width: 100%;
+  overflow: hidden;
+}
+
+section.showcase-1 .showcase-image img {
+  width: 100%;
+}
+
+section.showcase-1 .slick-arrow {
+  z-index: 3;
+}
+
+section.showcase-1 .slick-arrow.slick-prev {
+  left: 30px;
+}
+
+section.showcase-1 .slick-arrow.slick-prev::before {
+  content: "\f053";
+  font-family: 'Font Awesome 5 Free';
+  font-size: 30px;
+  height: 30px;
+  width: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: 900;
+}
+
+section.showcase-1 .slick-arrow.slick-next {
+  right: 30px;
+}
+
+section.showcase-1 .slick-arrow.slick-next::before {
+  content: "\f054";
+  font-family: 'Font Awesome 5 Free';
+  font-size: 30px;
+  height: 30px;
+  width: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: 900;
+}
+
 /*** start cats 1 **/
 .cats-1 {
   margin: 50px 0;
