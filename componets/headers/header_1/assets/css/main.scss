@@ -640,3 +640,21 @@ start product grid   **/
         }
     }
 }
+
+
+/** Start Product Promotion **/
+
+.product-promo {
+    .promo-container {
+        // border: 1px solid black;
+        .promotion-product-thumbnail {
+            width: 70%;
+            text-align: center;
+            img {
+                width: 100%;
+                display: block;
+                margin: auto;
+            }
+        }
+    }
+}

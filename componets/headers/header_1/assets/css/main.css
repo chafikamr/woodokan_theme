@@ -823,4 +823,16 @@ start product grid   **/
 .cats-2 .category-card .category-thumbnail img {
   width: 100%;
 }
+
+/** Start Product Promotion **/
+.product-promo .promo-container .promotion-product-thumbnail {
+  width: 70%;
+  text-align: center;
+}
+
+.product-promo .promo-container .promotion-product-thumbnail img {
+  width: 100%;
+  display: block;
+  margin: auto;
+}
 /*# sourceMappingURL=main.css.map */
