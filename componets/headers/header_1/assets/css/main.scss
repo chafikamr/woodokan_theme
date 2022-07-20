@@ -710,11 +710,25 @@ start product grid   **/
 .product-promo {
     .product-promo-wrapper {
         border: 1px solid #9e9e9e59;
-        padding: 41px;
         box-shadow: 1px 1px 20px 0px #0000000f;
+        padding: 40px 0;
     }
     .promo-container {
         // border: 1px solid black;
+        @media (max-width: 767px) {
+            & {
+                flex-direction: column-reverse;
+            }
+        }
+        .promo-product-details {
+            padding: 40px;
+            .product-rating {
+                color: gold;
+            }
+            .promo-product-excerpt {
+                font-size: 1.1rem;
+            }
+        }
         .promotion-product-thumbnail {
             width: 70%;
             text-align: center;
@@ -798,6 +812,32 @@ start product grid   **/
                 left: 64px;
                 top: 2px;
                 font-size: 30px;
+            }
+        }
+    }
+}
+
+
+/** start categories section **/
+
+.categories-section {
+    .category-card {
+        .category-image {
+            width: 100%;
+            padding: 0 0 100%;
+            display: block;
+            position: relative;
+            height: 0;
+            overflow: hidden;
+            // border-bottom: 1px solid rgba(0, 0, 0, 0.247);
+            img {
+                position: absolute;
+                top: 50%;
+                max-height: 100%;
+                text-indent: -9999px;
+                transition: transform .25s ease;
+                right: 50%;
+                transform: translate(50%, -50%) scale(1);
             }
         }
     }
