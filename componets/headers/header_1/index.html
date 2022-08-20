@@ -19,16 +19,18 @@
 
     <link rel="stylesheet" type="text/css" href="assets/css/slick/slick-theme.css" />
     <link rel="icon" type="image/x-icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpvatlDgt9fQltUQded6neCiW72untkdIh8g&usqp=CAU">
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400&family=Noto+Kufi+Arabic:wght@100;200;300;400&display=swap" rel="stylesheet">
     <title>Dokan Theme</title>
 </head>
 
-<body>
+<body style="font-family: 'Noto Kufi Arabic', sans-serif;">
     <div class="" id="overlay" style="height: 100%"></div>
     <!---- Start Header 1 -->
     <header class="header-1">
         <div class="store-notice">
-            <p>Free Shipping - Big Sale 100% off</p>
+            <p>شحن مجاني و الدفع عند الإستلام</p>
         </div>
         <div class="menu-desktop w-out">
             <div class="container">
@@ -41,25 +43,23 @@
                     <div class="main-menu">
                         <nav>
                             <ul>
-                                <li><a href="#">Home</a></li>
-                                <li><a href="#">About</a></li>
-                                <li><a href="#">Categories</a></li>
-                                <li><a href="#">Shop
-                                    
-                            </a>
-                                    <ul>
-                                        <li><a href="#">Linkooo</a></li>
-                                        <li><a href="#">Linkooo</a></li>
-                                        <li><a href="#">Linkooo</a></li>
-                                        <li><a href="#">Linkooo</a></li>
+                                <li><a href="#">الرئيسية </a>
 
-                                    </ul>
+                                </li>
+                                <li><a href="#">عن متجرنا</a>
+
+                                </li>
+                                <li><a href="#">التصنيفات</a>
+
+                                </li>
+                                <li><a href="#">تسوق الآن</a>
+
                                 </li>
                             </ul>
                         </nav>
                     </div>
                     <div class="icons">
-                        <div class="icon-cart-box">
+                        <div class="icon-cart-box" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
                             <span class="cart-total">
                                 <span class="total">200</span>
                             <span class="currency">MAD</span>
@@ -80,7 +80,7 @@
 
 
                     <div class="icons">
-                        <div class="icon-cart-box">
+                        <div class="icon-cart-box" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
 
                             <span class="cart-icon"><i class="fa-solid fa-basket-shopping"></i></span>
                         </div>
@@ -122,6 +122,163 @@
 
     </header>
     <!---- End Header 1 -->
+
+
+    <!--- start cart content -->
+    <style>
+        .cart-product {
+            width: 100%;
+            /* background: azure; */
+            border: 1px solid #9e9e9e4d;
+            height: 67px;
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+        
+        .cart-product .product-image-container {
+            width: 53px;
+            height: 44px;
+            background-color: #00e67a;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+        }
+        
+        .cart-product .product-image-container img {
+            width: 100%;
+        }
+        
+        .offcanvas-body ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        /* width */
+        
+        .offcanvas-body::-webkit-scrollbar {
+            width: 10px;
+        }
+        /* Track */
+        
+        .offcanvas-body::-webkit-scrollbar-track {
+            background: #f1f1f1;
+        }
+        /* Handle */
+        
+        .offcanvas-body::-webkit-scrollbar-thumb {
+            background: rgb(217, 217, 217);
+            border-radius: 100px;
+        }
+        /* Handle on hover */
+        
+        .offcanvas-body::-webkit-scrollbar-thumb:hover {
+            background: rgb(171, 171, 171);
+        }
+    </style>
+
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+        <div class="offcanvas-header bg-light">
+            <h5 class="offcanvas-title " id="offcanvasExampleLabel">View my cart</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <ul>
+                <li>
+                    <div class="cart-product">
+                        <div class="row">
+                            <div class="col-4">
+                                <div class="product-image-container">
+                                    <img src="https://cdn.shopify.com/s/files/1/0627/5517/products/ChronoSRoseGold_540x.jpg?v=1585715221" alt="">
+                                </div>
+                            </div>
+                            <div class="col-8">
+                                <div class="cart-product-details">
+                                    <p>lfdkgdfkgkdlkfgkl</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="cart-product">
+                        <div class="row">
+                            <div class="col-4">
+                                <div class="product-image-container">
+                                    <img src="https://cdn.shopify.com/s/files/1/0627/5517/products/ChronoSRoseGold_540x.jpg?v=1585715221" alt="">
+                                </div>
+                            </div>
+                            <div class="col-8">
+                                <div class="cart-product-details">
+                                    <p>lfdkgdfkgkdlkfgkl</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="cart-product">
+                        <div class="row">
+                            <div class="col-4">
+                                <div class="product-image-container">
+                                    <img src="https://cdn.shopify.com/s/files/1/0627/5517/products/ChronoSDarkOlive_Silver_540x.jpg?v=1611165749" alt="">
+                                </div>
+                            </div>
+                            <div class="col-8">
+                                <div class="cart-product-details">
+                                    <p>lfdkgdfkgkdlkfgkl</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="cart-product">
+                        <div class="row">
+                            <div class="col-4">
+                                <div class="product-image-container">
+                                    <img src="https://cdn.shopify.com/s/files/1/0627/5517/products/ChronoSDarkOlive_Silver_540x.jpg?v=1611165749" alt="">
+                                </div>
+                            </div>
+                            <div class="col-8">
+                                <div class="cart-product-details">
+                                    <p>lfdkgdfkgkdlkfgkl</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="cart-product">
+                        <div class="row">
+                            <div class="col-4">
+                                <div class="product-image-container">
+                                    <img src="https://cdn.shopify.com/s/files/1/0627/5517/products/ChronoSRoseGold_540x.jpg?v=1585715221" alt="">
+                                </div>
+                            </div>
+                            <div class="col-8">
+                                <div class="cart-product-details">
+                                    <p>lfdkgdfkgkdlkfgkl</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+
+            </ul>
+
+        </div>
+        <div class="offcanvas-footer p-3 bg-light">
+            <div class="d-grid gap-2">
+                <button class="btn btn-success" type="button"> Proceed to checkout </button>
+                <button class="btn btn-outline-danger" type="button"> Delete All </button>
+
+            </div>
+        </div>
+    </div>
+
+
+    <!--- end cart content -->
     <!-- Start Showcase 1-->
     <style>
         /* .show-case-1-slick {
@@ -141,7 +298,7 @@
         <section class="showcase-1 ">
             <div class="show-case-1-slick rounded overflow-hidden p-2 bg-white border">
                 <div class="showcase-image slick-slide">
-                    <img src="https://i.pinimg.com/736x/12/ea/f0/12eaf097685aff6c6cd91924ba91d3ae--mens-shorts-mens-clothing.jpg" alt="">
+                    <img src="https://cdn.youcan.shop/stores/fb939d141491debb928823d4004c72ed/others/kZRv2qALaCZinF1pqBuornniOkUOf4D8g9bWjjII.png" alt="">
                 </div>
                 <div class="showcase-image slick-slide">
                     <img src="https://i.pinimg.com/736x/12/ea/f0/12eaf097685aff6c6cd91924ba91d3ae--mens-shorts-mens-clothing.jpg" alt="">
@@ -276,7 +433,7 @@
             /* margin: 0 -20px; */
         }
     </style>
-    <div class="container">
+    <!-- <div class="container">
         <div class="your-class">
             <div>
                 <div class="slick-image-container slick-slide">
@@ -296,7 +453,7 @@
 
         </div>
 
-    </div>
+    </div> -->
 
     <!--- end ads baner 1 -->
 
@@ -402,7 +559,7 @@
                     <div class="col-md-3">
                         <div class="product-card">
                             <div class="product-thumbnail">
-                                <img src="https://cdn.shopify.com/s/files/1/0627/5517/products/ChronoSSilver_Tan_540x.jpg?v=1611165961" alt="">
+                                <img src="https://cdn.youcan.shop/stores/1fc0fa250d312c0e7619f88b9a6f0c0f/products/fZW6sZwFSO85ahHO6mGlAv1Z6ysLR35KyoC86HE2_md.jpeg" alt="">
                             </div>
                             <div class="product-details">
                                 <div class="product-title">
@@ -451,6 +608,7 @@
                                     <a href="#">Buy Now</a>
                                 </div>
                             </div>
+                            <span class="promo-label">-20%</span>
                         </div>
                     </div>
                     <!-- end item -->
@@ -479,6 +637,7 @@
                                     <a href="#">Buy Now</a>
                                 </div>
                             </div>
+                            <span class="promo-label">-20%</span>
                         </div>
                     </div>
                     <!-- end item -->
@@ -620,6 +779,7 @@
                                     <a href="#">Buy Now</a>
                                 </div>
                             </div>
+                            <span class="promo-label">-20%</span>
                         </div>
                     </div>
                     <!-- end item -->
@@ -648,6 +808,7 @@
                                     <a href="#">Buy Now</a>
                                 </div>
                             </div>
+                            <span class="promo-label">-20%</span>
                         </div>
                     </div>
                     <!-- end item -->
@@ -678,6 +839,7 @@
                                     <a href="#">Buy Now</a>
                                 </div>
                             </div>
+                            <span class="promo-label">-20%</span>
                         </div>
                     </div>
                     <!-- end item -->
@@ -689,11 +851,11 @@
                             </div>
                             <div class="product-details">
                                 <div class="product-title">
-                                    <h3>Product Twelve</h3>
+                                    <h3>عنوان المنتج</h3>
                                 </div>
                                 <div class="product-price">
-                                    <span class="regular-price">500 MAD </span>
-                                    <span class="offer-price">300 MAD </span>
+                                    <span class="regular-price">  500درهم   </span>
+                                    <span class="offer-price">درهم300   </span>
                                 </div>
                                 <div class="product-rating">
                                     <i class="fa-solid fa-star"></i>
@@ -703,9 +865,10 @@
                                     <i class="fa-solid fa-star"></i>
                                 </div>
                                 <div class="product-buy-now">
-                                    <a href="#">Buy Now</a>
+                                    <a href="#">إشتري الآن</a>
                                 </div>
                             </div>
+                            <span class="promo-label">-20%</span>
                         </div>
                     </div>
                     <!-- end item -->
@@ -718,63 +881,71 @@
 
     <!-- End product group-->
 
-    <!---- start promotion product -->
-    <section class="product-promo">
-        <div class="container col-xxl-8 px-4 my-5">
-            <div class="product-promo-wrapper">
 
+    <!---- Start promo 2-->
 
-                <div class="row flex-lg-row-reverse align-items-center g-5 promo-container  ">
-                    <div class="col-lg-6">
-                        <div class="promo-product-details">
-                            <h5 class="fw-bold lh-1 mb-3">Responsive left-aligned hero with image</h5>
-                            <div class="product-rating">
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                            </div>
-                            <div class="product-price">
-                                <span> <span class="display-6 text-success">30 MAD</span> <del>50 MAD</del></span>
-                            </div>
-                            <div class="promo-product-excerpt">
-                                <p class=" mt-3 ">Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s most popular front-end open source toolkit.</p>
+    <section class="promotion  " style="margin-top: 100px;text-align:right">
 
-                            </div>
+        <div class="container " style="font-family: 'Noto Kufi Arabic', sans-serif;">
+            <div class="card">
+                <div class="card-header">
+                    عرض خاص
+                </div>
+                <div class="card-body">
+                    <div class="row featurette g-5">
+                        <div class="col-md-5">
+                            <img src="https://s3-ap-southeast-1.amazonaws.com/s3.loopme.ph/img/newos/posts/2x/9942_166yBFOl4r6hP834_.jpg" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes">
+
                         </div>
-                        <div class="harry-up-sec">
-                            <div class=" countdown-section">
-                                <div class="text-harry">متبقي فس المخزون <span>30</span></div>
-                                <div class="text-harry">مدة العرض المتبقية</div>
-                                <div class="harry-progress"><span style="width: 35.7222%;"></span></div>
-                                <div class="harry-countdown">
-                                    <div class="duration"><span class="value">00</span> <span class="label">يوم</span></div>
-                                    <div class="duration"><span class="value">00</span> <span class="label"> ساعة</span></div>
-                                    <div class="duration"><span class="value">21</span> <span class="label">دقيقة</span></div>
-                                    <div class="duration"><span class="value">26</span> <span class="label">ثانية</span></div>
+                        <div class="col-md-7 ">
+                            <div class="promo-product-details">
+                                <h5 class="fw-bold lh-1 mb-3">ساعة يدوية أنيقة </h5>
+                                <div class="product-rating text-warning">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                                <div class="product-price">
+                                    <span> <span class="display-6 text-success">30 درهم</span> <del>50 MAD</del></span>
+                                </div>
+                                <div class="promo-product-excerpt">
+                                    <p class=" mt-3 text-muted">لوريم إيبسوم طريقة لكتابة النصوص في النشر والتصميم الجرافيكي تستخدم بشكل شائع لتوضيح الشكل المرئي للمستند أو الخط دون الاعتماد على محتوى ذي معنى.</p>
+
+                                </div>
+                                <div class="harry-up-sec">
+                                    <div class=" countdown-section">
+                                        <div class="text-harry"> في المخزون <span>30</span></div>
+                                        <div class="text-harry"> الوقت المتبقي </div>
+                                        <div class="harry-progress progress">
+
+                                            <div class="progress-bar progress-bar-striped progress-bar-animated bg-warning" role="progressbar" aria-label=" Warning Animated striped  example" style="width: 75%"></div>
+
+                                        </div>
+                                        <div class="harry-countdown">
+                                            <div class="duration"><span class="value">00</span> <span class="label">يوم</span></div>
+                                            <div class="duration"><span class="value">00</span> <span class="label">ساعة</span></div>
+                                            <div class="duration"><span class="value">21</span> <span class="label">دقيقة</span></div>
+                                            <div class="duration"><span class="value">26</span> <span class="label">ثانية</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="d-flex justify-content-center mt-4">
+                                    <a class="btn btn-primary btn-lg" style="width:100%">إشتري الآن  </a>
+
                                 </div>
                             </div>
-                        </div>
-                        <div class="d-grid gap-2 d-md-flex justify-content-center mt-4">
-                            <button class="btn btn-primary btn-lg">Buy Now </button>
 
                         </div>
-                    </div>
-                    <div class="col-12 col-sm-6 ">
-                        <div class="promotion-product-thumbnail mx-auto">
-                            <img src="https://s3-ap-southeast-1.amazonaws.com/s3.loopme.ph/img/newos/posts/2x/9942_166yBFOl4r6hP834_.jpg" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes">
-                        </div>
-                    </div>
 
+                    </div>
                 </div>
             </div>
+
         </div>
     </section>
-
-    <!---- End promotion product -->
-
-
+    <!---- End promo 2-->
 
 
     <!---- Start banner ads 1-->

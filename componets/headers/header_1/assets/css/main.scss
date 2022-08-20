@@ -86,20 +86,19 @@ header.header-1 {
                     text-align: center;
                     align-items: center;
                     height: 100%;
-                    ul {
+                    &>ul {
                         display: flex;
                         list-style: none;
                         align-items: center;
                         height: 100%;
                         margin: 0;
                         padding: 0;
-                        li {
+                        &>li {
                             position: relative;
-                            &:hover {
-                                &>ul {
-                                    display: block;
-                                }
-                            }
+                            height: 100%;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
                             a {
                                 padding: 0 16px;
                                 display: block;
@@ -108,31 +107,40 @@ header.header-1 {
                                 position: relative;
                                 overflow: visible;
                             }
-                            ul {
-                                // background-color: red;
-                                display: flex;
-                                flex-direction: column;
-                                padding: 0;
-                                margin: 0;
+                            &>ul {
+                                opacity: 0;
+                                visibility: hidden;
                                 position: absolute;
-                                top: 30px;
-                                height: fit-content;
-                                padding: 5px;
-                                background-color: white;
-                                border: 1px solid black;
-                                z-index: 20;
-                                min-width: 200px;
-                                display: none;
+                                transition: .3s ease-in-out;
+                                margin: 0;
+                                padding: 0;
+                                background: white;
+                                list-style-type: none;
+                                width: 227px;
+                                top: 134px;
+                                right: -152px;
+                                z-index: 100;
+                                border-radius: 5px;
+                                box-shadow: 0px 0px 6px 2px #00000005;
                                 &:hover {
                                     display: block;
                                 }
-                                li {
+                                &>li a {
+                                    display: block;
                                     width: 100%;
-                                    border-bottom: 1px solid black;
-                                    a {
-                                        padding: 5px;
-                                        text-align: left;
+                                    text-align: left;
+                                    padding: 9px 17px;
+                                    transition: .3s ease-in-out;
+                                    &:hover {
+                                        color: rebeccapurple;
                                     }
+                                }
+                            }
+                            &:hover {
+                                &>ul {
+                                    visibility: visible;
+                                    opacity: 1;
+                                    top: 102px;
                                 }
                             }
                         }
@@ -514,6 +522,17 @@ start product grid   **/
         // border: 1px solid rgba(0, 0, 0, 0.174);
         // box-shadow: 0 5px 20px -10px rgba(0, 0, 0, .1);
         border-radius: 3px;
+        position: relative;
+        .promo-label {
+            position: absolute;
+            padding: 5px;
+            background-color: #000000;
+            color: white;
+            top: 0;
+            border-radius: 5px;
+            right: 0;
+            font-size: 13px;
+        }
         .product-thumbnail {
             width: 100%;
             padding: 0 0 100%;
@@ -746,7 +765,7 @@ start product grid   **/
 
 .harry-up-sec {
     font-family: cairo;
-    width: 500px;
+    width: 100%;
     margin: auto;
     border: 1px solid #f0f0f0;
     padding: 20px;
