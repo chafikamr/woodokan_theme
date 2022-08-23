@@ -248,8 +248,8 @@ header.header-1 .menu-desktop .main-navigation .icons .icon-cart-box:hover {
 
 header.header-1 .menu-desktop .main-navigation .icons .icon-cart-box .cart-items-count {
   font-size: 11px;
-  color: white;
-  background-color: green;
+  color: black;
+  background-color: gold;
   position: absolute;
   top: -16px;
   right: -14px;
@@ -688,6 +688,7 @@ start product grid   **/
 .products_grid_1 .product-card {
   margin-top: 30px;
   overflow: hidden;
+  border: 1px solid #0000001a;
   border-radius: 3px;
   position: relative;
 }
@@ -697,9 +698,9 @@ start product grid   **/
   padding: 5px;
   background-color: #000000;
   color: white;
-  top: 0;
+  top: 20;
   border-radius: 5px;
-  right: 0;
+  right: 20;
   font-size: 13px;
 }
 
@@ -765,10 +766,10 @@ start product grid   **/
   display: block;
   text-decoration: none;
   color: black;
-  border: 1px solid black;
   width: 100%;
   padding: .4rem;
   border-radius: 3px;
+  background-color: #f7d208;
 }
 
 /*** start socila media 1 ***/
