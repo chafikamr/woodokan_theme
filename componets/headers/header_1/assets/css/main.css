@@ -80,6 +80,9 @@ header.header-1 .menu-desktop {
   width: 100%;
   background-color: white;
   top: 0px;
+  background-color: rgba(255, 255, 255, 0.8);
+  -webkit-backdrop-filter: blur(8px);
+          backdrop-filter: blur(8px);
   display: none;
   top: 0;
   -webkit-transition: top .5s ease-in-out;

@@ -68,6 +68,8 @@ header.header-1 {
         width: 100%;
         background-color: white;
         top: 0px;
+        background-color: hsla(0, 0%, 100%, .8);
+        backdrop-filter: blur(8px);
         // position: sticky;
         display: none;
         top: 0;
