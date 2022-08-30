@@ -1,0 +1,173 @@
+[33mcommit 2bb2f008f325b5a6451f790eab1d0fe5f690f0ed[m[33m ([m[1;36mHEAD -> [m[1;32mwoodokan[m[33m, [m[1;31morigin/woodokan[m[33m)[m
+Author: Chafik Amraoui <chafikamraoui0@gmail.com>
+Date:   Tue Aug 30 17:45:40 2022 +0100
+
+    add slick to categories
+
+[33mcommit e7dbaae33ca5d73819e5851b14a1246dd363dc78[m
+Author: Chafik Amraoui <chafikamraoui0@gmail.com>
+Date:   Thu Aug 25 10:27:53 2022 +0100
+
+    add blury navbar
+
+[33mcommit 30a62a1307a5ae47f3429b624dfd742d51bc269b[m
+Author: Chafik Amraoui <chafikamraoui0@gmail.com>
+Date:   Tue Aug 23 20:06:01 2022 +0100
+
+    remove old promotion section
+
+[33mcommit 4bee89dd1e04c97324e1348ea9c307830054183a[m
+Author: Chafik Amraoui <chafikamraoui0@gmail.com>
+Date:   Tue Aug 23 14:21:04 2022 +0100
+
+    featured product card update
+
+[33mcommit 6e5a45b7acae8efffdbba8664f78dbca713d08b4[m
+Author: Chafik Amraoui <chafikamraoui0@gmail.com>
+Date:   Sat Aug 20 17:32:02 2022 +0100
+
+    add lazy loading
+
+[33mcommit d7d6508331eb41ac4ee37f94827d83b30686dcdd[m
+Author: Chafik Amraoui <chafikamraoui0@gmail.com>
+Date:   Sat Aug 20 11:40:35 2022 +0100
+
+    fix banner
+
+[33mcommit 6a101930f3f1c07ca1bfba038f5ebf9a5b4c2480[m
+Author: Chafik Amraoui <chafikamraoui0@gmail.com>
+Date:   Wed Jul 20 18:45:02 2022 +0100
+
+    rmastering home page
+
+[33mcommit 521aae111f0b6486cc0dff430d61e773f14751d7[m
+Author: Chafik Amraoui <chafikamraoui0@gmail.com>
+Date:   Tue Jul 19 17:44:15 2022 +0100
+
+    add counter to product promo
+
+[33mcommit 9f63f8d276476726c672347cbc4650074f77a869[m
+Author: Chafik Amraoui <chafikamraoui0@gmail.com>
+Date:   Tue Jul 19 13:18:07 2022 +0100
+
+    slick carousel problem solved
+
+[33mcommit 0da45fd9e16bc473b95ea743d66c34e97b0be202[m
+Author: Chafik Amraoui <chafikamraoui0@gmail.com>
+Date:   Tue Jul 19 13:16:37 2022 +0100
+
+    solve slick slider loading problem
+
+[33mcommit 9e9fc23239bd7cf7cf1e8e35b795e0e1a5fabbf5[m
+Author: Chafik Amraoui <chafikamraoui0@gmail.com>
+Date:   Tue Jul 19 13:04:16 2022 +0100
+
+    rollback carousel
+
+[33mcommit 717f63ab3f3992b6492194afaba551f2387cf3db[m
+Author: Chafik Amraoui <chafikamraoui0@gmail.com>
+Date:   Tue Jul 19 12:59:16 2022 +0100
+
+    add promo product section
+
+[33mcommit 35964c9c2bf1dc16fb15c06d2a5502b01a16f099[m
+Author: Chafik Amraoui <chafikamraoui0@gmail.com>
+Date:   Tue Jul 19 03:08:01 2022 +0100
+
+    first commit
+
+[33mcommit d16a411e37abfcfe5aaf18be1961c43219d23bb3[m[33m ([m[1;31morigin/main[m[33m, [m[1;32mmain[m[33m, [m[1;32mcheckout[m[33m)[m
+Author: Chafik Amraoui <chafikamraoui0@gmail.com>
+Date:   Sat May 28 01:33:33 2022 +0100
+
+     change logo design
+
+[33mcommit a1af86fb2ac7cf0af4d1ffc8900a72a121add62a[m
+Author: Chafik Amraoui <chafikamraoui0@gmail.com>
+Date:   Sat May 28 01:09:16 2022 +0100
+
+     add theme color
+
+[33mcommit 619bc196e74a9e9b51f44d6cc34263be96abbe30[m
+Author: Chafik Amraoui <chafikamraoui0@gmail.com>
+Date:   Sat May 28 01:03:13 2022 +0100
+
+    category card grid
+
+[33mcommit a44b40c1b484a9beb99b86b7878b3fb64b11f164[m
+Author: Chafik Amraoui <chafikamraoui0@gmail.com>
+Date:   Sat May 28 00:57:04 2022 +0100
+
+    change category style
+
+[33mcommit 6c49276939a1ad45d38548e4ba7f6c5990087ffe[m
+Author: Chafik Amraoui <chafikamraoui0@gmail.com>
+Date:   Fri May 27 01:27:12 2022 +0100
+
+     final touch
+
+[33mcommit 3c77cfe829a27d9f5ebe4efe45ff9cd5b62eb862[m
+Author: Chafik Amraoui <chafikamraoui0@gmail.com>
+Date:   Thu May 26 02:16:42 2022 +0100
+
+     fix footer alignement
+
+[33mcommit 1c84e5769af84a5ab0fd97af39702f06b78b133b[m
+Author: Chafik Amraoui <chafikamraoui0@gmail.com>
+Date:   Thu May 26 01:56:35 2022 +0100
+
+     create banner ads and footer
+
+[33mcommit ff26125619c7e266196faed9760f60ae1122a6be[m
+Author: Chafik Amraoui <chafikamraoui0@gmail.com>
+Date:   Wed May 25 02:04:32 2022 +0100
+
+     add cta section
+
+[33mcommit aa3bc61c21f48efe2c69c35bd4476459c7e55dd1[m
+Author: Chafik Amraoui <chafikamraoui0@gmail.com>
+Date:   Tue May 24 02:24:17 2022 +0100
+
+     add categories section
+
+[33mcommit a8401abb62ff22c4f65bab2b35cefd11975aa2a6[m
+Author: Chafik Amraoui <chafikamraoui0@gmail.com>
+Date:   Mon May 23 00:18:53 2022 +0100
+
+    add showcase carousel and final touch to menu
+
+[33mcommit cc703545e4be90a5f2bb6392d141497f9aa897f3[m
+Author: Chafik Amraoui <chafikamraoui0@gmail.com>
+Date:   Sat May 21 02:08:35 2022 +0100
+
+     fix side mobe menu position
+
+[33mcommit f908413fef091de8de9fda3aeaa8933f17ea127d[m
+Author: Chafik Amraoui <chafikamraoui0@gmail.com>
+Date:   Sat May 21 01:56:21 2022 +0100
+
+     add animation to top bar on scroll
+
+[33mcommit 625e672f15ef5637acf65cec69e1a872051699e2[m
+Author: Chafik Amraoui <chafikamraoui0@gmail.com>
+Date:   Sat May 21 01:28:00 2022 +0100
+
+     add side menu close button and overlay
+
+[33mcommit a282734ed7c10b0662da7423b02cac389e08823c[m
+Author: Chafik Amraoui <chafikamraoui0@gmail.com>
+Date:   Thu May 19 02:28:48 2022 +0100
+
+    add left sidebar
+
+[33mcommit 4079d8f406fda969a2fb56368081dd928111e61b[m
+Author: Chafik Amraoui <chafikamraoui0@gmail.com>
+Date:   Tue May 17 03:28:08 2022 +0100
+
+     Mobile responsive header
+
+[33mcommit 42e2daa7818ab2d240e521dedc919b760d3d3f34[m
+Author: Chafik Amraoui <chafikamraoui0@gmail.com>
+Date:   Mon May 16 02:47:06 2022 +0100
+
+    bismi Allah
