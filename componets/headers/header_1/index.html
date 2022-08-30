@@ -576,6 +576,93 @@
 
     <!----end categories ---->
 
+    <!---- start categories ------->
+    <section class="categories-section">
+        <div class="container">
+            <header class="text-center my-5">
+                <h3>
+                    Categories
+                </h3>
+            </header>
+            <style>
+                .cats_carousel .col {
+                    padding-right: calc(var(--bs-gutter-x) * .5);
+                    padding-left: calc(var(--bs-gutter-x) * .5);
+                }
+            </style>
+            <div class="cats_carousel row">
+                <div class="col ">
+                    <div class="card   category-card">
+                        <div class="category-image">
+                            <img src="https://target.scene7.com/is/image/Target/GUEST_49af82bd-2612-4d55-b1d6-cb1c2ca729cd" alt="">
+
+                        </div>
+                        <div class="card-body text-center">
+                            <p class="card-text">This is a wider card with supporting </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col ">
+                    <div class="card   category-card">
+                        <div class="category-image">
+                            <img src="https://target.scene7.com/is/image/Target/GUEST_49af82bd-2612-4d55-b1d6-cb1c2ca729cd" alt="">
+
+                        </div>
+                        <div class="card-body text-center">
+                            <p class="card-text">This is a wider card with supporting </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col ">
+                    <div class="card   category-card">
+                        <div class="category-image">
+                            <img src="https://target.scene7.com/is/image/Target/GUEST_49af82bd-2612-4d55-b1d6-cb1c2ca729cd" alt="">
+
+                        </div>
+                        <div class="card-body text-center">
+                            <p class="card-text">This is a wider card with supporting </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card   category-card">
+                        <div class="category-image">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9i3QJISG-CwqFVLUI4jLWgSRTVl6uhFT32A&usqp=CAU" alt="">
+
+                        </div>
+                        <div class="card-body text-center">
+                            <p class="card-text">This is a wider card with supporting </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card   category-card">
+                        <div class="category-image">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSr3bN7_p_bpCbW7MucHdmm6ShY-tH7pNu2LA&usqp=CAU" alt="">
+
+                        </div>
+                        <div class="card-body text-center">
+                            <p class="card-text">This is a wider card with supporting </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card   category-card">
+                        <div class="category-image">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyZzOqQ5Xpy9wqyjel7yf4-81SjGMTCSpvvVgg9CFR75GK5lQG9ROu3q-oI97ePoDdza0&usqp=CAU" alt="">
+
+                        </div>
+                        <div class="card-body text-center">
+                            <p class="card-text">This is a wider card with supporting </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!----end categories ---->
+
     <style>
         .lds-spinner {
             color: official;
@@ -836,7 +923,7 @@
                     <div class="col-md-3">
                         <div class="product-card">
                             <div class="product-thumbnail">
-                                <img class="lazy" data-src="https://cdn.youcan.shop/stores/c6e6650dad0323c2cf37b34be14b4946/products/I8cDqA57birA63x7LHfhshpqD0nVQHfQcz22Wqtl_md.png" alt="">
+                                <img class="lazy" data-src="https://cdn.shopify.com/s/files/1/2020/4093/products/FC2129-TieDyeJumpsuit-1_1024x1024.jpg?v=1650188492" alt="">
                                 <div class="lazy-placeholder">
                                     <div class="lds-spinner">
                                         <div></div>
@@ -1251,7 +1338,26 @@
 
 
 
-
+    <style>
+        .cat-slick-right {
+            right: 5px;
+            padding: 21px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 5px;
+        }
+        
+        .cat-slick-left {
+            left: 5px;
+            padding: 21px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 5px;
+            z-index: 99;
+        }
+    </style>
 
 
     <!--- End categories -->
@@ -1276,6 +1382,44 @@
                 infinite: true,
                 slidesToShow: 2,
                 slidesToScroll: 1
+            });
+            $('.cats_carousel').slick({
+                dots: true,
+                infinite: true,
+                arrows: true,
+                prevArrow: '<div class="slick-prev bg-dark cat-slick-left"><i class="fa fa-angle-" aria-hidden="true"></i></div>',
+                nextArrow: '<div class="slick-next bg-dark cat-slick-right"><i class="fa-solid fa-angles-right" aria-hidden="true"></i></div>',
+
+
+                slidesToShow: 4,
+                slidesToScroll: 3,
+                responsive: [{
+                        breakpoint: 1024,
+                        settings: {
+                            slidesToShow: 3,
+                            slidesToScroll: 3,
+                            infinite: true,
+                            dots: true
+                        }
+                    }, {
+                        breakpoint: 600,
+                        settings: {
+                            slidesToShow: 2,
+                            slidesToScroll: 2,
+                            arrows: true,
+                        }
+                    }, {
+                        breakpoint: 480,
+                        settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 1,
+                            arrows: true,
+                        }
+                    }
+                    // You can unslick at a given breakpoint now by adding:
+                    // settings: "unslick"
+                    // instead of a settings object
+                ]
             });
         });
         document.addEventListener("DOMContentLoaded", function() {
