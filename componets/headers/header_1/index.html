@@ -590,7 +590,7 @@
                     padding-left: calc(var(--bs-gutter-x) * .5);
                 }
             </style>
-            <div class="cats_carousel row">
+            <div class="cats_carousel ">
                 <div class="col ">
                     <div class="card   category-card">
                         <div class="category-image">
@@ -1357,6 +1357,34 @@
             border-radius: 5px;
             z-index: 99;
         }
+        
+        .slick-prev-button {
+            position: absolute;
+            top: 50%;
+            left: 0;
+            transform: translateY(-50%);
+            background: #da9125;
+            padding: 14px;
+            color: white;
+            z-index: 10;
+            font-size: 24px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        
+        .slick-next-button {
+            position: absolute;
+            top: 50%;
+            right: 0;
+            transform: translateY(-50%);
+            background: #da9125;
+            padding: 14px;
+            color: white;
+            z-index: 10;
+            font-size: 24px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
     </style>
 
 
@@ -1387,8 +1415,8 @@
                 dots: true,
                 infinite: true,
                 arrows: true,
-                prevArrow: '<div class="slick-prev bg-dark cat-slick-left"><i class="fa fa-angle-" aria-hidden="true"></i></div>',
-                nextArrow: '<div class="slick-next bg-dark cat-slick-right"><i class="fa-solid fa-angles-right" aria-hidden="true"></i></div>',
+                prevArrow: '<i class="slick-prev-button fa-solid fa-angle-left"></i>',
+                nextArrow: '<i class="slick-next-button fa-solid fa-angle-right"></i>',
 
 
                 slidesToShow: 4,
