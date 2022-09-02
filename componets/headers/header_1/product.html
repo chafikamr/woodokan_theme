@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+    <!-- Bootstrap Grid Only -->
+    <!-- <link rel="stylesheet" href="assets/css/bootstrap-grid.css"> -->
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="assets/css/all.min.css">
+    <!-- Main Css -->
+    <link rel="stylesheet" href="assets/css/main.css">
+    <!-- Slick js-->
+    <meta name="theme-color" content="#010101">
+    <link rel="stylesheet" type="text/css" href="assets/css/slick/slick.css" />
+
+    <link rel="stylesheet" type="text/css" href="assets/css/slick/slick-theme.css" />
+    <link rel="icon" type="image/x-icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpvatlDgt9fQltUQded6neCiW72untkdIh8g&usqp=CAU">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400&family=Noto+Kufi+Arabic:wght@100;200;300;400&display=swap" rel="stylesheet">
+    <title>Dokan Theme</title>
+</head>
+
+<body style="font-family: 'Noto Kufi Arabic', sans-serif;">
+    <div class="" id="overlay" style="height: 100%"></div>
+    <!---- Start Header 1 -->
+    <header class="header-1">
+        <div class="store-notice">
+            <p>شحن مجاني و الدفع عند الإستلام</p>
+        </div>
+        <div class="menu-desktop w-out">
+            <div class="container">
+                <div class="main-navigation">
+                    <div class="logo">
+                        <a href="#">
+                            <img src="assets/images/logo.png" alt="">
+                        </a>
+                    </div>
+                    <div class="main-menu">
+                        <nav>
+                            <ul>
+                                <li><a href="#">الرئيسية </a>
+
+                                </li>
+                                <li><a href="#">عن متجرنا</a>
+
+                                </li>
+                                <li><a href="#">التصنيفات</a>
+
+                                </li>
+                                <li><a href="#">تسوق الآن</a>
+
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="icons">
+                        <div class="icon-cart-box" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+                            <span class="cart-total">
+                                <span class="total">200</span>
+                            <span class="currency">MAD</span>
+                            </span>
+                            <span class="cart-icon"><i class="fa-solid fa-basket-shopping"></i></span>
+                            <span class="cart-items-count">05</span>
+                        </div>
+                        <div class="icon-search-box">
+                            <span class="search-icon"><i class="fa-solid fa-magnifying-glass"></i></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="menu-mobile w-mobile-out">
+            <div class="container">
+                <div class="main-navigation">
+
+
+                    <div class="icons">
+                        <div class="icon-cart-box" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+
+                            <span class="cart-icon"><i class="fa-solid fa-basket-shopping"></i></span>
+                        </div>
+
+                    </div>
+                    <div class="logo">
+                        <a href="#">
+                            <img src="assets/images/logo.png" alt=""> </a>
+                    </div>
+                    <div class="burger-button">
+                        <i class="fas fa-align-right" id="open_side_menu"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="left-sidebar off">
+            <div class="close-icon">
+                <button id="close_mobile_sidebar"><i class="fa-solid fa-xmark"></i></button>
+            </div>
+            <header>
+                <a href="#">
+                    <img src="https://alexharkness.com/wp-content/uploads/2020/06/logo-2.png" alt="">
+                </a>
+            </header>
+            <nav>
+                <form action="" method="post">
+                    <input type="search" name="" id="" placeholder="search for a product">
+                </form>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Categories</a></li>
+                    <li><a href="#">Shop</a></li>
+                </ul>
+            </nav>
+        </div>
+
+    </header>
+    <!---- End Header 1 -->
+
+
+    <style>
+        .gallery-image-wrapper {
+            width: 100%;
+            display: inline-block;
+            overflow: hidden;
+            width: 100px;
+            height: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .gallery-image-wrapper img {
+            max-height: 100%;
+        }
+        
+        .thumbnail-image-wrapper img {
+            max-width: 100%;
+        }
+    </style>
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="product-preview">
+                        <div class="product-thumbnail">
+                            <div class="thumbnail-carousel">
+                                <div class="thumbnail-image-wrapper">
+                                    <img src="https://cdn.youcan.shop/stores/c21f969b5f03d33d43e04f8f136e7682/products/WzwMvHplS7hDtJjDxRkZ0kseC9BnRAaQYFUWy5Og_lg.png" alt="">
+
+                                </div>
+                                <div class="thumbnail-image-wrapper">
+                                    <img src="https://cdn.youcan.shop/stores/c21f969b5f03d33d43e04f8f136e7682/products/Q7ZgTSQbs3gJl5ARAUkBDEs9OpEe2Mq47AR6tiJf.png" alt="">
+
+                                </div>
+                                <div class="thumbnail-image-wrapper">
+                                    <img src="https://cdn.youcan.shop/stores/c21f969b5f03d33d43e04f8f136e7682/products/sNxd8M0TbbHJ3u0tuQqeZmuqtIiIHNd5nMW2Ez60.png" alt="">
+
+                                </div>
+                                <div class="thumbnail-image-wrapper">
+                                    <img src="https://cdn.youcan.shop/stores/c21f969b5f03d33d43e04f8f136e7682/products/70sdy2kUDk8QZ9lUCVJEaQfIT3yrG9F6vdP9xiqe.png" alt="">
+
+                                </div>
+                            </div>
+                            <div class="gallery-carousel">
+                                <div class="gallery-image-wrapper">
+                                    <img src="https://cdn.youcan.shop/stores/c21f969b5f03d33d43e04f8f136e7682/products/WzwMvHplS7hDtJjDxRkZ0kseC9BnRAaQYFUWy5Og_lg.png" alt="">
+
+                                </div>
+                                <div class="gallery-image-wrapper">
+                                    <img src="https://cdn.youcan.shop/stores/c21f969b5f03d33d43e04f8f136e7682/products/Q7ZgTSQbs3gJl5ARAUkBDEs9OpEe2Mq47AR6tiJf.png" alt="">
+
+                                </div>
+                                <div class="gallery-image-wrapper">
+                                    <img src="https://cdn.youcan.shop/stores/c21f969b5f03d33d43e04f8f136e7682/products/sNxd8M0TbbHJ3u0tuQqeZmuqtIiIHNd5nMW2Ez60.png" alt="">
+
+                                </div>
+                                <div class="gallery-image-wrapper">
+                                    <img src="https://cdn.youcan.shop/stores/c21f969b5f03d33d43e04f8f136e7682/products/70sdy2kUDk8QZ9lUCVJEaQfIT3yrG9F6vdP9xiqe.png" alt="">
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!--- start cart content -->
+    <style>
+        .cart-product {
+            width: 100%;
+            /* background: azure; */
+            border: 1px solid #9e9e9e4d;
+            height: 67px;
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+        
+        .cart-product .product-image-container {
+            width: 53px;
+            height: 44px;
+            background-color: #00e67a;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+        }
+        
+        .cart-product .product-image-container img {
+            width: 100%;
+        }
+        
+        .offcanvas-body ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        /* width */
+        
+        .offcanvas-body::-webkit-scrollbar {
+            width: 10px;
+        }
+        /* Track */
+        
+        .offcanvas-body::-webkit-scrollbar-track {
+            background: #f1f1f1;
+        }
+        /* Handle */
+        
+        .offcanvas-body::-webkit-scrollbar-thumb {
+            background: rgb(217, 217, 217);
+            border-radius: 100px;
+        }
+        /* Handle on hover */
+        
+        .offcanvas-body::-webkit-scrollbar-thumb:hover {
+            background: rgb(171, 171, 171);
+        }
+    </style>
+
+    <!--- start social media -->
+
+    <section class="social_media_1">
+        <header>
+            <h4>Follow us on </h4>
+        </header>
+        <div class="container">
+            <div class="wrapper mt-5">
+                <div class="social-media-link" style="background-color:#063878">
+                    <i class="fa-brands fa-facebook-f"></i>
+
+                </div>
+                <div class="social-media-link" style="background-color: #20b6ff">
+                    <i class="fa-brands fa-telegram"></i>
+
+                </div>
+                <div class="social-media-link" style="background-color:#00e67a">
+                    <i class="fa-brands fa-whatsapp"></i>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--- End social media -->
+
+    <!---Start Footer 1-->
+
+    <footer class="footer_1">
+        <div class="container">
+            <div class="footer-block">
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="section">
+                            <header>
+                                <h4>Quick Links</h4>
+                            </header>
+                            <ul>
+                                <li>Home</li>
+                                <li>About</li>
+                                <li>Services</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="section">
+                            <header>
+                                <h4>Quick Links</h4>
+                            </header>
+                            <ul>
+                                <li>Home</li>
+                                <li>About</li>
+                                <li>Services</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="section">
+                            <header>
+                                <h4>Quick Links</h4>
+                            </header>
+                            <ul>
+                                <li>Home</li>
+                                <li>About</li>
+                                <li>Services</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="section">
+                            <div class="store_logo">
+                                <a href="#">
+                                    <img src="assets/images/logo.png" alt=""> </a>
+                            </div>
+                            <div class="store_description">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Est exercitationem ipsa odio, iste perspiciatis quis ratione quaerat? Minus, placeat facere.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="copyrights">
+                Made with <i class="fa-solid fa-heart"></i> By Chafik Amraoui
+            </div>
+        </div>
+    </footer>
+    <!---End Footer 1-->
+
+
+    <style>
+        .cat-slick-right {
+            right: 5px;
+            padding: 21px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 5px;
+        }
+        
+        .cat-slick-left {
+            left: 5px;
+            padding: 21px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 5px;
+            z-index: 99;
+        }
+        
+        .slick-next-button {
+            position: absolute;
+            top: 50%;
+            right: 0;
+            transform: translateY(-50%);
+            background: #979797a3;
+            padding: 14px;
+            color: white;
+            display: flex;
+            height: 100%;
+            z-index: 10;
+            font-size: 24px;
+            border-radius: 5px;
+            cursor: pointer;
+            align-items: center;
+        }
+        
+        .slick-prev-button {
+            position: absolute;
+            top: 50%;
+            left: 0;
+            transform: translateY(-50%);
+            background: #979797a3;
+            padding: 14px;
+            color: white;
+            display: flex;
+            height: 100%;
+            z-index: 10;
+            font-size: 24px;
+            border-radius: 5px;
+            cursor: pointer;
+            align-items: center;
+        }
+    </style>
+
+
+    <!--- End categories -->
+
+    <!-- Slick -->
+    <script type="text/javascript" src="assets/js/jquery/jquery-3.0.6.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="assets/js/slick/slick.min.js"></script>
+    <script type="text/javascript" src="assets/js/slick/slick.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('.thumbnail-carousel').slick({
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                arrows: false,
+
+                asNavFor: '.gallery-carousel',
+
+            });
+            $('.gallery-carousel').slick({
+                slidesToShow: 3,
+                slidesToScroll: 1,
+                asNavFor: '.thumbnail-carousel',
+
+                centerMode: true,
+                focusOnSelect: true,
+                prevArrow: '<i class="slick-prev-button fa-solid fa-angle-left"></i>',
+                nextArrow: '<i class="slick-next-button fa-solid fa-angle-right"></i>',
+            });
+        })
+    </script>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
